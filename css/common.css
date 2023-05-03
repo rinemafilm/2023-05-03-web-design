@@ -80,3 +80,171 @@ body {
     background-color: tomato;
     color: #ffffff;
 }
+
+/* slide */
+
+.slide {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slider .item img {
+    display: block;
+}
+
+/* contents */
+.contents {
+    height: 200px;
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.tab {
+    /* background-color: aqua; */
+    position: relative;
+    flex: 1;
+    height: 200px;
+}
+
+.tab_title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tab_title h2 {
+    flex: 1;
+}
+
+.tab_title a{
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    background-color: #eee;
+}
+
+.tab_title a.on {
+    background-color: tomato;
+    color: #ffffff;
+}
+
+.tab_title::after{
+    content: '';
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: tomato;
+}
+
+
+.tab_contents{
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    /* display: none; */
+}
+
+.tab_contents .notice {
+    display: none;
+}
+
+.tab_contents .notice a {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    padding: 5px 6px;
+}
+
+.tab_contents .gallery {
+    display: flex;
+    gap: 12px;
+    height: 100%;
+    padding: 10px 10px 0 10px;
+    /* display: none; */
+}
+
+.tab_contents .gallery li {
+
+}
+
+.tab_contents .gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner {
+    height: 180px;
+    flex: 1;
+    background-color: red;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.link {
+    height: 180px;
+    flex: 1;
+    /* background-color: blueviolet; */
+}
+
+.link .items {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 16px;
+}
+
+.link .items a {
+    display: block;
+    background-color: #ddd;
+    border-radius: 8px;
+    height: 85px;
+    line-height: 85px;
+    text-align: center;
+}
+
+.blind {
+    display: none;
+}
+
+.footer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    background-color: #eee;
+}
+
+.footer h1 a {
+    display: block;
+    text-indent: -9999px;
+    width: 200px;
+    height: 40px;
+    background: url('../images/logo-footer.png') no-repeat center;
+}
+
+.footer .sns {
+    display: flex;
+    gap: 30px;
+}
